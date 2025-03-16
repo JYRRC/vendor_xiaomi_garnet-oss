@@ -40,8 +40,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/garnet/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.7.2_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.7.2_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd \
     vendor/xiaomi/garnet/proprietary/vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.36_enpu2.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.36_enpu2.pmd \
     vendor/xiaomi/garnet/proprietary/vendor/etc/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
-    vendor/xiaomi/garnet/proprietary/vendor/etc/audio_cloud_control_white_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_cloud_control_white_list.xml \
-    vendor/xiaomi/garnet/proprietary/vendor/etc/audio_diag.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/audio_diag.cfg \
     vendor/xiaomi/garnet/proprietary/vendor/etc/audio_policy_engine_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_configuration.xml \
     vendor/xiaomi/garnet/proprietary/vendor/etc/audio_policy_engine_default_stream_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_default_stream_volumes.xml \
     vendor/xiaomi/garnet/proprietary/vendor/etc/audio_policy_engine_product_strategies.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_product_strategies.xml \
@@ -1154,13 +1152,11 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss-aidl-impl-qti \
     android.hardware.gnss@2.1-impl-qti \
     audio.bluetooth_qti.default \
-    audio.primary.parrot \
     camera.qcom \
     camera.xiaomi \
     com.dsi.ant@1.0-impl \
     com.qti.chi.override \
     consumerir.qcom \
-    gyro_fusion_interface \
     vendor.qti.esepowermanager@1.1-impl \
     vendor.qti.hardware.alarm@1.0-impl \
     vendor.qti.hardware.bluetooth_audio@2.0-impl \
@@ -1251,9 +1247,6 @@ PRODUCT_PACKAGES += \
     libTrustedUITZ \
     libTrustedUIVM \
     libXMFaceFocus \
-    lib_bt_aptx \
-    lib_bt_ble \
-    lib_bt_bundle \
     lib_misound_asc \
     libadaptlaunch \
     libadm \
@@ -1261,7 +1254,6 @@ PRODUCT_PACKAGES += \
     libadreno_utils \
     libadsp_default_listener \
     libadsprpc \
-    libagm \
     libaidenoiser \
     libalCFR \
     libalLDC \
@@ -1272,10 +1264,6 @@ PRODUCT_PACKAGES += \
     libancbase \
     libapengine \
     libappclassifier \
-    libar-acdb \
-    libar-gpr \
-    libar-gsl \
-    libar-pal \
     libarcsoft_beautyshot \
     libarcsoft_dualcam_refocus_image \
     libarcsoft_dualcam_refocus_video \
@@ -1288,11 +1276,7 @@ PRODUCT_PACKAGES += \
     libasn1cper \
     libasn1crt \
     libasn1crtx \
-    libats \
     libaudio_log_utils \
-    libaudiocloudctrl \
-    libaudioroute_ext \
-    libawcal \
     libbacklight-calib \
     libbase64 \
     libbatching \
@@ -1369,7 +1353,6 @@ PRODUCT_PACKAGES += \
     libfastcrc \
     libfastcvdsp_stub \
     libfastcvopt \
-    libfsalgocal \
     libgame_enhance \
     libgarden \
     libgarden_haltests_e2e \
@@ -1397,7 +1380,6 @@ PRODUCT_PACKAGES += \
     libizat_core \
     libjnihelper \
     libjpege \
-    libkaraokepal \
     libkcl \
     libkernelmanager \
     libkeymasterdeviceutils \
@@ -1429,8 +1411,6 @@ PRODUCT_PACKAGES += \
     liblowi_common \
     liblowi_wifihal \
     liblqe \
-    liblx-ar_util \
-    liblx-osal \
     libmasc \
     libmcs \
     libmctfengine_stub \
@@ -1611,7 +1591,6 @@ PRODUCT_PACKAGES += \
     librelight_only \
     libremosaic_wrapper \
     libremosaiclib \
-    libresampler \
     libril-db \
     libril-legacy \
     libril-qc-ltedirectdisc \
@@ -1709,7 +1688,6 @@ PRODUCT_PACKAGES += \
     libwvhidl \
     libwvkeybox \
     libxiaomi_qcril \
-    libxlog \
     libxmi_hdr_checker \
     libxmi_high_dynamic_range \
     libxmi_slow_motion_mein \
@@ -1767,6 +1745,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss-V3-ndk_platform \
     vendor.qti.gnss-service \
     vendor.qti.hardware.AGMIPC@1.0-impl \
+    vendor.qti.hardware.ListenSoundModel@1.0-impl \
+    vendor.qti.hardware.ListenSoundModel@1.0 \
     vendor.qti.hardware.alarm@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.1 \
